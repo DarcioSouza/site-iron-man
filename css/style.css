@@ -16,7 +16,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url(/assets/hferro06.jpg);
+    background-image: url(../assets/hferro06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,7 +147,7 @@ footer {
 
 @media (max-width: 425px) {
     body {
-        background-image: url(/assets/hferro05.jpg);
+        background-image: url(../assets/hferro05.jpg);
     }
     .contents {
         width: 100%;
