@@ -1,0 +1,186 @@
+/* Arquivo Css criado por Dárcio Souza. Exercício-01 Marvel Studios */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+@font-face {
+    font-family: iron-man;
+    src: url(../fonts/iron-man/ironMan.woff2);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/hferro06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents {
+    width: 1700px;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    gap: 30px;
+}
+
+header nav ul li {
+    color: #fafafa;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* coloca efeito nos itens do menu */
+
+header nav ul li:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease-out;
+    text-shadow: 0px 0px 15px rgb(198, 246, 255);
+}
+
+main {
+    width: 50%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main h1 {
+    font-family: iron-man;
+    font-size: 120px;
+    line-height: 120px;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-size: 50px;
+    color: red;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+main p {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fafafa;
+}
+
+main a {
+    text-decoration: none;
+    background-color: red;
+    border-radius: 5px;
+    color: #fafafa;
+    padding: 15px;
+    margin: 15px 0;
+    width: fit-content;
+    font-weight: bold;
+    transition: 1s;
+}
+
+main a:hover {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    transition: 1s ease-out;
+    box-shadow: 0px 0px 20px rgb(198, 246, 255);
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: #fafafa;
+}
+
+
+/* TABLET VERSION */
+
+@media (max-width: 1024px) {
+    .contents {
+        width: 960px;
+        height: 600px;
+    }
+}
+
+
+/* MOBILE VERSION */
+
+@media (max-width: 425px) {
+    body {
+        background-image: url(/assets/hferro05.jpg);
+    }
+    .contents {
+        width: 100%;
+        height: 97vh;
+    }
+    header {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    header img {
+        width: 100px;
+        height: 40px;
+    }
+    nav {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    main h1 {
+        font-size: 70px;
+    }
+    main h2 {
+        font-size: 30px;
+    }
+    main p {
+        width: 100%;
+        padding: 0 15px;
+        line-height: 1.4;
+        font-size: 12px;
+    }
+    footer {
+        font-size: 10px;
+        text-align: center;
+    }
+}
